@@ -1,0 +1,280 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+      background: #b91d32;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .header {
+    position: relative;
+    width: 1440px;
+    height: 96px;
+    margin: 0 0 0 0;
+    background: #b91d32;
+    z-index: 19;
+  }
+  .logo-senai {
+    position: absolute;
+    width: 300px;
+    height: 96px;
+    top: 50%;
+    left: 0;
+    background: url(/img/logo_senai.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(0, -50%);
+    z-index: 20;
+  }
+  .text-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 56px;
+    top: calc(50% - 28px);
+    left: calc(50% - 186px);
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 21;
+  }
+  .body {
+    position: relative;
+    width: 1441px;
+    height: 832px;
+    margin: 0 0 0 -1px;
+    z-index: 10;
+  }
+  .menu {
+    position: absolute;
+    width: 163px;
+    height: 832px;
+    top: 50%;
+    left: 50%;
+    font-size: 0px;
+    background: #b91d32;
+    transform: translate(-442.02%, -50%);
+    z-index: 5;
+  }
+  .plano-de-ensino {
+    display: block;
+    position: relative;
+    height: 23px;
+    margin: 25px 0 0 7.087px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+  }
+  .plano-de-aula {
+    display: block;
+    position: relative;
+    height: 23px;
+    margin: 9px 0 0 17.211px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 8;
+  }
+  .cronograma {
+    display: block;
+    position: relative;
+    height: 23px;
+    margin: 9px 0 0 23.286px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .background-content {
+    position: absolute;
+    width: 1279px;
+    height: 832px;
+    top: 0;
+    left: 162px;
+    font-size: 0px;
+    background: #ffffff;
+    z-index: 10;
+  }
+  .gerador-plano-ensino {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 397px;
+    height: 38px;
+    margin: 16px 0 0 441px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 14;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+  }
+
+  .label1{
+    color: #000000;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-left: 81px;
+  }
+
+  .descreva-persona-ia {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 1118px;
+    height: 96px;
+    margin: 16px 0 16px 81px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+    z-index: 17;
+  }
+  .descreva-desejo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 1118px;
+    height: 96px;
+    margin: 16px 0 16px 81px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+    z-index: 16;
+  }
+  .texto-gerado-ia {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 1118px;
+    height: 320px;
+    margin: 16px 0 16px 81px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+    z-index: 15;
+  }
+  .btn-gerar {
+    position: relative;
+    width: 142px;
+    height: 48px;
+    margin: 32px 0 0 1057px;
+    background: #b91d32;
+    z-index: 12;
+    border-radius: 16px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .btn-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 49.65px;
+    height: 23px;
+    top: calc(50% - 11px);
+    left: calc(50% - 25px);
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 13;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 1440px;
+    height: 96px;
+    margin: 0 0 0 0;
+    background: #b91d32;
+    z-index: 2;
+  }
+  .text-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 459px;
+    height: 57px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: center;
+    z-index: 2;
+  }
+  
