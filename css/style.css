@@ -44,7 +44,7 @@
     height: 96px;
     top: 50%;
     left: 0;
-    background: url(/img/logo_senai.png)
+    background: url(./img/logo_senai.png)
       no-repeat center;
     background-size: cover;
     transform: translate(0, -50%);
