@@ -24,7 +24,7 @@ var opts = {
     position: 'absolute' // Elemento de posicionamento
 };
 
-const apiUrl = 'http://127.0.0.1:5000/generate'; // Substitua com a URL da sua API
+const apiUrl = 'https://msepapi-iz4crpefma-uc.a.run.app/generate'; // Substitua com a URL da sua API
 
 btnGerar.addEventListener('click', async () => {
     const target = document.getElementById('spinner-container');
