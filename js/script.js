@@ -37,7 +37,7 @@ btnGerar.addEventListener('click', async () => {
     const desejo = desejoInput.value;
 
     const data = {
-        uri: "gs://dada-ged/Book MSEP Digital.pdf", // URI fixo
+        uri: "gs://documentos-ged/Book MSEP Digital.pdf", // URI fixo
         text1_1: desejo,
         textsi_1: persona
     };
