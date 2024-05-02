@@ -24,7 +24,7 @@ var opts = {
     position: 'absolute' // Elemento de posicionamento
 };
 
-const apiUrl = 'http://127.0.0.1:5000/generate'; // Substitua com a URL da sua API
+const apiUrl = 'https://msepapi-jkwtayswda-uc.a.run.app/generate'; // Substitua com a URL da sua API
 
 // Função para exibir o spinner
 function showSpinner() {
