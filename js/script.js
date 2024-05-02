@@ -24,7 +24,17 @@ var opts = {
     position: 'absolute' // Elemento de posicionamento
 };
 
-const apiUrl = 'https://msepapi-iz4crpefma-uc.a.run.app:443/generate'; // Substitua com a URL da sua API
+const apiUrl = 'http://127.0.0.1:5000/generate'; // Substitua com a URL da sua API
+
+// Função para exibir o spinner
+function showSpinner() {
+    spinner.spin(target);
+  }
+  
+  // Função para ocultar o spinner
+  function hideSpinner() {
+    spinner.stop();
+  }
 
 btnGerar.addEventListener('click', async () => {
     const target = document.getElementById('spinner-container');
@@ -56,7 +66,8 @@ btnGerar.addEventListener('click', async () => {
         }
 
         const responseData = await response.json();
-        txtOutput.value = responseData.resultado;
+        txtOutput.value = responseData.text;
+        spinner.stop();
     } catch (error) {
         console.error('Erro:', error);
         txtOutput.value = 'Ocorreu um erro ao processar a solicitação.';
