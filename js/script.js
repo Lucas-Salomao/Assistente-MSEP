@@ -2,6 +2,7 @@ const btnGerar = document.getElementById('btnGerar');
 const personaInput = document.getElementById('persona');
 const desejoInput = document.getElementById('desejo');
 const txtOutput = document.getElementById('txtoutput');
+const target = document.getElementById('txtoutput');
 
 var opts = {
     lines: 13, // O número de linhas para desenhar
@@ -37,12 +38,13 @@ function showSpinner() {
   }
 
 btnGerar.addEventListener('click', async () => {
-    const target = document.getElementById('spinner-container');
+    
     if (!target) {
         console.error('Elemento target não encontrado!');
     } else {
-        var spinner = new Spin.Spinner(opts).spin(target);
+        var spinner = new Spin.Spinner(opts);
     }
+
     const persona = personaInput.value;
     const desejo = desejoInput.value;
 
@@ -53,6 +55,7 @@ btnGerar.addEventListener('click', async () => {
     };
 
     try {
+        await showSpinner();
         const response = await fetch(apiUrl, {
             method: 'POST',
             headers: {
@@ -64,7 +67,7 @@ btnGerar.addEventListener('click', async () => {
         if (!response.ok) {
             throw new Error('Erro na requisição da API');
         }
-
+        hideSpinner();
         const responseData = await response.json();
         txtOutput.value = responseData.text;
         spinner.stop();
