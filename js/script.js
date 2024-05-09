@@ -61,7 +61,7 @@ btnGerar.addEventListener('click', async () => {
         html = converter.makeHtml(txt_markdown);
         markdown.innerHTML = html;
         console.log(markdown);
-
+        txtOutput.value = responseData.text;
     } catch (error) {
         console.error('Erro:', error);
         txtOutput.value = 'Ocorreu um erro ao processar a solicitação.';
