@@ -1,0 +1,12 @@
+// Variable overrides first
+$primary: #b91d32;
+
+.textarea {
+    resize:none;
+    width: 100%;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
