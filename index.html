@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/stylesmin.css" rel="stylesheet">
 
-    <title>Assistente MSEP
-    </title>
+    <title>Assistente MSEP</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 
 <body data-bs-theme="light" class="bg-light">
@@ -45,12 +45,64 @@
             <br>
             <div class="container">
                 <h1 class="text-center">Plano de Ensino</h1>
+                <br>
                 <div>
                     <div class="mb-3">
-                        <label for="persona" class="form-label">Descreva como a IA irá agir:</label>
-                        <textarea class="form-control" name="persona" id="persona" rows="5"
-                            style="resize: none;"></textarea>
+                        <label for="persona" class="form-label">Quem é você?</label>
+                        <!--<textarea class="form-control" name="persona" id="persona" rows="5"
+                            style="resize: none;"></textarea>-->
+                            <select class="form-select" aria-label="Papel">
+                                <option value="0" selected>Selecione</option>
+                                <option value="1">Especialista em Educação</option>
+                                <option value="2">Coordenador</option>
+                                <option value="3">Docente</option>
+                            </select>
                     </div>
+                    <div class="mb-3">
+                        <label class="form-label">Modalidade:</label>
+                            <select class="form-select" aria-label="Modalidade">
+                                <option value="0"selected>Selecione</option>
+                                <!--<option value="1">Aprendizagem</option>-->
+                                <option value="2">Curso Técnico</option>
+                                <!--<option value="3">Formação Inicial e Continuada</option>-->
+                            </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Curso:</label>
+                            <select class="form-select" aria-label="Curso">
+                                <option value="0"selected>Selecione</option>
+                                <option value="1">Técnico em Eletroeletrônica</option>
+                            </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Unidade Curricular:</label>
+                            <select class="form-select" aria-label="Unidade Curricular">
+                                <option value="0"selected>Selecione</option>
+                                <option value="1">Eletricidade</option>
+                                <option value="2">Desenho Técnico</option>
+                                <option value="3">Sistemas Eletroeletrônicos Prediais</option>
+                                <option value="4">Comunicação em Multimeios</option>
+                                <option value="5">Sistemas Eletrônicos Analógicosa</option>
+                                <option value="5">Máquinas Elétricas e Acionamentos</option>
+                                <option value="5">Sistemas Eletrônicos Digitais</option>
+                                <option value="5">Integração de Sistemas Eletroeletrônicos Industriais</option>
+                                <option value="5">Gestão da Manutenção de Sistemas Eletroeletrônicos</option>
+                                <option value="5">Desenvolvimento de Sistemas Eletroeletrônicos</option>
+                                <option value="5">Projetos</option>
+                            </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Estratégia de Aprendizagem Desafiadora:</label>
+                            <select class="form-select" aria-label="Estratégia de Aprendizagem Desafiadora">
+                                <option value="0"selected>Selecione</option>
+                                <option value="1">Situação Problema</option>
+                                <option value="2">Estudo de Caso</option>
+                                <option value="3">Projeto Integrador</option>
+                                <option value="4">Projetos</option>
+                                <option value="5">Pesquisa Aplicada</option>
+                            </select>
+                    </div>
+                    
                     <div class="mb-3">
                         <label for="persona" class="form-label">Descreva como deseja o plano de ensino, com a maior
                             riqueza de detalhes possível:</label>
