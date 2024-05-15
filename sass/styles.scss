@@ -8,5 +8,11 @@ $primary: #b91d32;
     overflow-y: scroll;
 }
 
+.markdown
+{
+    background-color: white;
+}
+
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
